@@ -1,0 +1,105 @@
+
+
+html {
+    background-color: #ddd;
+    text-align: center;
+}
+
+body {
+    margin: 3em auto 2em;
+    text-align: left;
+    width: 700px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2em;
+    box-shadow: 0 0 100px -20px #000;
+    border-radius: 5px;
+
+}
+
+form {
+    width: 400px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.postTitle {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.postBody {
+    padding: 10px;
+}
+
+.deleteLink {
+    float: right;
+    background-color: #D99;
+    padding: 0.5em;
+}
+
+.deleteLink a {
+    color: #333;
+}
+
+h4{
+    margin-bottom: 0;
+
+}
+
+fieldset{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+form{
+    padding: 10px;
+    background: #eee;
+    width: auto;
+}
+
+input[type=text]{
+    margin: 0;
+    width: auto;
+
+}
+
+a.editButton{
+    width: 30px;
+    height: 30px;
+    background: transparent url("../gfx/icon-edit.png") no-repeat;
+    display: block;
+    float: left;
+}
+
+a.editButton:hover{
+    background: transparent url("../gfx/icon-edit-hover.png") no-repeat;
+}
+
+a.deleteButton{
+    width: 30px;
+    height: 30px;
+    background: transparent url("../gfx/icon-delete.png") no-repeat;
+    display: block;
+    float: left;
+}
+
+a.deleteButton:hover{
+    background: transparent url("../gfx/icon-delete-hover.png") no-repeat;
+}
+
+.buttonsContainer {
+	float: right;
+	padding: 3px;
+}
+
+.buttonsContainer a{
+    text-decoration: none;
+}
