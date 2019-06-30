@@ -20,8 +20,10 @@
 
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 
-    <script type="text/javascript" id="jquery" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" id="jquery" src="http://code.jquery.com/jquery-1.6.2.min.js" nonce="1234"></script>
 	<title>ludvigsen blog</title>
+
+    <script src="../../primary.js" nonce="1234"/>
 </head>
 
 <body>

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * This is the main page, and serves the comments get requests, and add comments on post requests.
@@ -19,8 +20,10 @@ import javax.servlet.http.HttpServletRequest;
 public class BlogController {
 
     @RequestMapping(value = {"/", "/blog"}, method = RequestMethod.GET)
-    public String showBlog(Model model) {
+    public String showBlog(Model model, HttpServletResponse response) {
         model.addAttribute("comments", Database.getComments());
+
+        response.setHeader("Content-Security-Policy", "script-src 'nonce-1234' 'strict-dynamic'");
         return "blog";
     }
 
